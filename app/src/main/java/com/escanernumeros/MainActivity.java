@@ -150,11 +150,13 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
 
     public String detectarTexto(Bitmap bitmap) {
         //
-        String listaNegra="!@#$%^&*()_+=-qwertyuiop[]}{POIU" +
-                "YTREWQasdASDfghFGHjklJKLl;L:'\"\\|~`xcvXCVbnmBNM,./<>?";
+        /*String listaNegra="!@#$%^&*()_+=-qwertyuiop[]}{POIU" +
+                "YTREWQasdASDfghFGHjklJKLl;L:'\"\\|~`xcvXCVbnmBNM,./<>?";*/
+        String listaNegra="!@#$%^&*()_+=-qwertyuio[]}{OIU" +
+                "YTREWQasdASDfghFGHjklJKLl;L:'\"\\|~`xvXVbnmBNM,./<>?";
 
 
-        String listaBlanca="1234567890";
+        String listaBlanca="1234567890PC";
         TessDataManager.initTessTrainedData(getApplicationContext());
         TessBaseAPI tessBaseAPI = new TessBaseAPI();
         String path =TessDataManager.getTesseractFolder();
